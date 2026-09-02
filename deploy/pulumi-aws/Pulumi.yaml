@@ -1,0 +1,11 @@
+name: openclaw-ollama-deploy
+description: 'Two-VM AWS deployment: OpenClaw gateway + Ollama/Qwen3.5 model host'
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: vm-aws-python
